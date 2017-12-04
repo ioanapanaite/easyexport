@@ -59,7 +59,7 @@ Default page configuration:
   - No cookies
   
   
-###### 2.1. PDF with default configuration
+##### 2.1. PDF with default configuration
 ```
 EasyExportPageConfig pageConfig = new EasyExportPageConfig.Builder()
     .exportType(PageExportType.PDF)
@@ -67,7 +67,7 @@ EasyExportPageConfig pageConfig = new EasyExportPageConfig.Builder()
 File result = easyExporter.render(pageConfig, "http://www.google.com", "/tmp/randomdirectory/resultFile.pdf");
 ```
 
-###### 2.2 PNG with custom page viewport size
+##### 2.2 PNG with custom page viewport size
   
 ```
 EasyExportPageConfig pageConfig = new EasyExportPageConfig.Builder()
@@ -75,11 +75,11 @@ EasyExportPageConfig pageConfig = new EasyExportPageConfig.Builder()
     .pageViewportSize(1500, 1200);
 File result = easyExporter.render(pageConfig, "http://www.google.com", "/tmp/randomdirectory/resultFile.png");
 ```
-###### 2.3. PDF with custom paper size
+##### 2.3. PDF with custom paper size
 
 Note: You can either define width + height, or format
 
-###### 2.3.1. Width, height and margin
+##### 2.3.1. Width, height and margin
 ```
 PagePaperSize pagePaperSize = new PagePaperSize.Builder()
     .withDimensions(new PageAttribute(140, mm), new PageAttribute(310, mm))
