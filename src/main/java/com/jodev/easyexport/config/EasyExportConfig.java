@@ -84,7 +84,7 @@ public class EasyExportConfig {
 
         Integer phantomJsNoOfAliveInstances = 3;
 
-        Integer maxRequestsPerRenderer = 1;
+        Integer maxRequestsPerRenderer = 1000;
 
         Integer maxRetriesPerRequest = 5;
 
